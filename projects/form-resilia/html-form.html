@@ -1,0 +1,42 @@
+<!-- Declara para o Navegador que será utilizado HTML5 na Página Abaixo-->
+<!DOCTYPE html> 
+<!-- TAG de abertura da estrutura HTML com parâmetros lang=EN (idioma inglês) /  dir=LTR (LEFT TO RIGHT, escrita da esquerda para direita - Escrita padrão do idioma ingles  ) -->
+<html lang="en" dir="ltr"> 
+    <head> <!-- Inicio da área de CABEÇALHO da Página-->
+                <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22> 💛</text></svg>">  <!-- Modificar o FAVICON da página, nesse caso para um coração amarelo -->
+                   <meta charset="UTF-8"> 
+                   <title> Formulário de Inscrição | Resilia  </title>  <!-- Titulo que aparece na ABA DO NAVEGADOR -->         
+                   <link rel="stylesheet" href="style-form.css">   <!-- Link para carregar o arquivo de ESTILO CSS -->
+                   <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Tag Meta Ajustar a página dependendo do dispositivo -->
+    </head>     <!-- Fim do cabeçalho-->
+    <body>  <!-- Inicio do Conteudo no Corpo da Página-->
+        <div class="container">  <!-- DIV que abriga todas as demais -->
+                     <div class="title">Formação WebDev Resilia</div> <!--DIV class definida para o titulo do form -->            
+                        <div class="content">  <!--Div para agrupar os outros divs com input boxes e o form-->
+                             <form action="#">  <!-- Tag de inicio do formulário sem acão definida ao clicar no botao de envio-->
+                                 <div class="user-details">  <!-- Div com class definida para as informaçoes do candidato-->
+                                         <div class="input-box">  <!-- div com class input-box para todas as perguntas  -->
+                                             <span class="details">Nome Completo</span>  <!-- Texto envolvido da tag span com classe definida para personalização no CSS-->
+                                             <input type="text" required="" placeholder="Digite seu Nome"> <!--box para entrada da informação pelo usuario, tipo texto, preenchimento obrigatório, placeholder definido-->
+                                         </div>
+                                         <div class="input-box"> 
+                                              <span class="details">Data de Nascimento</span> 
+                                              <input type="date" required="" placeholder="DD/MM/AAA"> <!-- box para entrada da informação de data, tipo data, preenchimento obrigatório, placeholder definido-->
+                                         </div>
+                                          <div class="input-box"> 
+                                              <span class="details">Email para Contato</span> 
+                                             <input type="email" pattern="+@." required="" placeholder="Ex: JaneDoe@gmail.com">  <!--box de entrada de informação de email , tipo email, preenchimento obrigatório, pattern de resposta exigindo o @, preenchimento obrigatório e placeholder definido-->
+                                         </div>
+                                          <div class="input-box"> 
+                                              <span class="details">Celular/WhatsApp</span> 
+                                              <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength="11" required="" placeholder="DDD + Número">  <!--box de entrada para numero de telefone com limite de quantidade de 11 numeros-->
+                                          </div>                         
+                                  </div>                     
+                                          <div class="button"> 
+                                              <input type="submit" value="Confirmar Cadastro"> 
+                                         </div>                     
+                              </form>                 
+                        </div>
+        </div>         
+    </body>     
+</html>
