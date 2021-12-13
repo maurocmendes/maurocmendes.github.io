@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 0px;
+    font-size: 25px;
+}
+
+.corpo {
+    justify-content: center;
+    text-align: center;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fotocidade {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 45px;
+    line-height: 3;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    background: w;
+}
+
+.frase {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 18px;
+    color: black;
+    font-weight: 700;
+}
+
+.cali {
+    font-family: 'Aldrich', sans-serif;
+    color: #000000;
+}
+
+.u {
+    color: blue;
+}
+
+.s {
+    color: white;
+}
+
+.a {
+    color: red;
+}
+
+.h2 {
+    font-size: 25px;
+}
+
+.objetivo {
+    width: 1;
+    height: 80px;
+}
