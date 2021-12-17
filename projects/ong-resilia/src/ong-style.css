@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: aqua;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+header{
+    background: grey;
+    height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
+main{
+    background: white;
+     grid-column-start: 1;
+    grid-column-end: 4;
+}
+footer{
+    background: grey;
+    height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
