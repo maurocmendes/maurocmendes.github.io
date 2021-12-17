@@ -5,7 +5,7 @@ Student - Software Engineering and Web Development
 
 
 ## 🛠 Skills
-Javascript, HTML, CSS, AngularJS...
+Javascript, HTML, CSS, AngularJS....
 
 
 ## 🔗 Links
