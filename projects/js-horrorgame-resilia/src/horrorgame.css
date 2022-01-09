@@ -1,0 +1,86 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: .5px ;
+}
+.bg-image {
+    background-image: url("/projects/js-horrorgame-resilia/src/images/bg-pc.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #conteudo{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  form{
+      max-width: 600px;
+      height: 400px;
+      padding: 2em;
+  }
+  form p{
+      margin-bottom: 18px;
+      font-size: 1em;
+      line-height: 1.5em;
+  }
+  form fieldset{
+      margin-bottom: 18px;
+      padding: 0;
+      border: none;
+  }
+  form a.continue{
+      font-size: 1.3em;
+      background-color: whitesmoke;
+      color: black;
+      padding: .5em 1em;
+      text-decoration: none;
+      float: right;
+  }
+  form a.continue:hover,
+  form a.continue:focus{
+      background-color: #d41616;
+      color: black;
+  }
+  button.reset{
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-family: 'Inconsolata', monospace;
+      letter-spacing: .5px;
+      
+    }
+    button.reset:hover{
+        color:tomato;
+    }
+    form label span{
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        padding: 14px 12px;
+        border: 2px solid tomato;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+    form label:hover span, form label:focus span{
+        border: 2px solid tomato;
+        background-color: whitesmoke;
+        color: black;
+    }
+    form input [type=radio]{
+        visibility: hidden;
+    }
+    form input [type=radio]:checked +span{
+        border: 2px solid tomato;
+        background-color: whitesmoke;
+        color: black;
+    }
