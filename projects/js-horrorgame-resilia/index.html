@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="src/reset.css">
     <link rel="stylesheet" href="src/horrorgame.css">
     <link rel="shortcut icon" type="image/ico" href="src/favicon.ico"/>  
     <script src="src/title.js"></script>
     <title></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
-      
-
+       
 </head>
-<body>
-    <div>
-        <audio autoplay loop>
-            <source src="./src/sound/bgmusic.mp3" type="audio/mpeg">
-          </audio>
+  <body>
+        <div class="bg-image">       
+            <div class="gridbox">
+                    <div class="conteinerbox">
+                        <header>
+                                <div class="menu">
+                                    <h1>Contos de Terror</h1>
+                                    <audio autoplay loop>
+                                    <source src="./src/sound/bgmusic.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>     
+                        </header>
+                        <section class="conteudo">
+                            <div class="column1">
+                                    <p>Julia</p>
+                                    <img src="./src/images/Julia200-300.png">
+                            </div>
+                            <div class="column2">
+                                    <p>Carlos</p>
+                                    <img src="./src/images/Carlos200-300.png">
+                            </div>
+                            <div class="column3">
+                                    <p>Eleonor</p>
+                                    <img src="./src/images/Eleonor200-300.png">
+                            </div>      
+                        </section>
+                                    
+                        <footer>
+                                    <p>Copyright</p>
+                        </footer>
+                    </div>
     </div>
-    <div class="bg-image">
-    <div id="conteudo">
-        <form id="theHorrorGame">
-            <p></p>
-            <fieldset></fieldset>
-            <button id="resetButton" class="reset" onclick="resetForm()">Reiniciar</button>
-            <a id="continueButton" class="continue" href="javascript:void(0);">Continuar</a>
-          </form>
-    </div>
-    </div>
-    <script src="src/horrorgame.js"></script>
-</body>
-</html>
+   </body>
+ </html>
+            
+            

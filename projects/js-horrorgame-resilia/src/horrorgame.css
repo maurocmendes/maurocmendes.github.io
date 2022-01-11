@@ -1,3 +1,5 @@
+
+
 body {
     height: 100%;
     margin: 0;
@@ -8,79 +10,85 @@ body {
     letter-spacing: .5px ;
 }
 .bg-image {
-    background-image: url("/projects/js-horrorgame-resilia/src/images/bg-pc.jpg");
+    background-image: url("./images/bg-pc.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
-  #conteudo{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+.gridbox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+header, footer{
+  width: 100vw;
+    height: 10vh;  
+}
+section{
+ width: 100vw;
+ height: 80vh;   
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+.menu h1{
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.conteudo {
+    display: -webkit-flex;
+    display: flex;
+    flex-grow: 1 ;
   }
-  form{
-      max-width: 600px;
-      height: 400px;
-      padding: 2em;
+    .column1 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  form p{
-      margin-bottom: 18px;
-      font-size: 1em;
-      line-height: 1.5em;
+  .column2{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  form fieldset{
-      margin-bottom: 18px;
-      padding: 0;
-      border: none;
+  .column3{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  form a.continue{
-      font-size: 1.3em;
-      background-color: whitesmoke;
-      color: black;
-      padding: .5em 1em;
-      text-decoration: none;
-      float: right;
-  }
-  form a.continue:hover,
-  form a.continue:focus{
-      background-color: #d41616;
-      color: black;
-  }
-  button.reset{
-      background-color: transparent;
-      border: none;
-      color: white;
-      font-size: 18px;
-      font-family: 'Inconsolata', monospace;
-      letter-spacing: .5px;
-      
-    }
-    button.reset:hover{
-        color:tomato;
-    }
-    form label span{
-        display: block;
-        box-sizing: border-box;
-        margin-bottom: 8px;
-        padding: 14px 12px;
-        border: 2px solid tomato;
-        cursor: pointer;
-        border-radius: 25px;
-    }
-    form label:hover span, form label:focus span{
-        border: 2px solid tomato;
-        background-color: whitesmoke;
-        color: black;
-    }
-    form input [type=radio]{
-        visibility: hidden;
-    }
-    form input [type=radio]:checked +span{
-        border: 2px solid tomato;
-        background-color: whitesmoke;
-        color: black;
-    }
+img{
+    padding-top: 1em;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}

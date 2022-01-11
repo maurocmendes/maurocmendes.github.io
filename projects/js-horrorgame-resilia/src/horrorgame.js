@@ -1,59 +1,87 @@
 
-var historia = 0;
+var story = 0; 
 var form = document.getElementById('theHorrorGame');
-var submit = document.getElementById('continueButton');
 var reset = document.getElementById('resetButton');
 var answer = '';
 
-var contar_historias = {
-    "iniciar": {
-        "perguntas": "Você está iniciando uma nova aventura, qual personagem você escolhe? ",
-        "respostas":{
-            "a": "Julia",
-            "b": "Carlos",
-            "c": "Cassandra"
-        }
-    }
-}
 
 
 
-// var story = 0; // keep story from being undefined 
-// var form = document.getElementById('theHorrorGame');// get the element with matching ids
-// var submit = document.getElementById('continueButton');
-// var reset = document.getElementById('resetButton');
-// var answer = '';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // var story_telling = {
-//   "start": { //beginning of the story
-//     "question": "You set out on a brand new adventure, where would you like to go?",
+//   "start": { // Inicio da Historia - Seleção de Personagem
+//     "question": "Você está iniciando uma nova aventura, qual personagem você escolhe?",
 //     "answers": {
-//       "a": "Forest",
-//       "b": "Cave",
-//       "c": "Mountain",
+//         "a": "Julia, a caçadora de vampiros 🧛‍♀️ ",
+//         "b": "Carlos, o programador revoltado 🧑‍💻 ",
+//         "c": "Cassandra, a detetive entediada 🕵️‍♀️ ",
 //     }
 //   },
-//   // Forest Path 
+//   //  Julia
 //   "1_a": {
-//     "question": "You decide to go to the forest, and you meet a kind fairy. Do you...",
+//     "question": "Você escolheu a Julia, uma destemida caçadora de vampiros. O que você vai fazer essa noite ... ",
 //     "answers": {
-//       "a": "Ask her if she wants to join you on your adventure.",
-//       "b": "Swat her away like a fly.",
-//       "c": "Wave at her and continue on your way."
+//         "a": "Ir até o mercado, comprar pizza congelada e maratonar filmes de terror na Netflix.",
+//         "b": "Caminhar até o Parque da Cidade para investigar boatos sobre vampiros na cidade.",
+//         "c": "Pegar sua câmera e investigar uma casa mal assombrada."
 //     }
 //   },
 
 //   "2_a": {
-//     "question": "The fairy glady accepts your offer and you two have a wonderful day! The End.",
-//   },
+//     "question": "Julia voltou para casa com 2 pizzas, 1kg de alho e 1 pote de sorvete. O que fazer agora.",
+//     "answers": {
+//         "a": "Esquentar a 1 pizza e escolher algum filme de terror.",
+//         "b": "Descascar alhos para fazer um colar de proteção contra vampiros.",
+//         "c": "Assar a pizza de banana e colocar sorvete e leite condensado em cima."
+        
+//     }  
+// },
 //   "2_b": {
-//     "question": "The fairy turns into an angry lion and chases you out of the forest. The End.",
-//   },
+//     "question": "E agora 3.",
+//     "answers": {
+//         "a": "Ir até o mercado, comprar pizza congelada e maratonar filmes de terror na Netflix.",
+//         "b": "Caminhar até o Parque da Cidade para investigar boatos sobre vampiros na cidade.",
+//         "c": "Pegar sua câmera e investigar uma casa mal assombrada."
+//     }
+// },
 //   "2_c": {
-//     "question": "The fairy gives you some awesome new shoes. The End.",
-//   },
+//     "question": "Pizza de Banana com sorvete e leite condensado",
+//     "answers": {
+//         "a": "Ir até o mercado, comprar pizza congelada e maratonar filmes de terror na Netflix.",
+//         "b": "Caminhar até o Parque da Cidade para investigar boatos sobre vampiros na cidade.",
+//         "c": "Pegar sua câmera e investigar uma casa mal assombrada."
+//     }
+// },
 
-//   // Cave Path
+//   //  Carlos
 
 //   "1_b": {
 //     "question": "You go to the caves a run into a terrifying minotaur. What do you do?",
@@ -84,6 +112,7 @@ var contar_historias = {
 //       "i": "Name the goat Gregory and become best friends.",
 //     }
 //   },
+
 //   "2_g": {
 //     "question": "You become the national fiddle playing champion. The End.",
 //   },
@@ -122,8 +151,8 @@ var contar_historias = {
 //     }
 //   }
 
-//   form.querySelector('p').innerHTML = current_story.question;//write questions to the p tag in the HTML
-//   form.querySelector('fieldset').innerHTML = text;//write answers to the fieldset 
+//   form.querySelector('p').innerHTML = current_story.question;// Escreve as perguntas na tag P do HTML
+//   form.querySelector('fieldset').innerHTML = text;// Escreve as respostas no campo delimitado
 // }
 
-// populateForm('start');//set the form at the beginning
+// populateForm('start');// Determina o ponto de partida das perguntas
