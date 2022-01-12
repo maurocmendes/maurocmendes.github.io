@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700");
+body {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 100px;
+}
+/*<--  Template https://gist.github.com/CodeMyUI/986e8aac26c931aa97c63a48cb035a5a -->*/
+.test {
+  animation: squiggly-anim 0.34s linear infinite;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  background: #111;
+  color: #fff;
+}
+
+.test{
+    padding-top: 10px;
+}
+.escolha{
+    color: rgb(19, 238, 12);
+}
+.sentenca{
+    color: crimson;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: yellow;
+}
+.test {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  outline: none;
+  text-align: center;
+  line-height: 1;
+}
+.small {
+  font-size: 0.7em;
+}
+.smaller {
+  font-size: 0.6em;
+}
+p {
+  margin: 0;
+}
+@-moz-keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+@-webkit-keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+@-o-keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+@keyframes squiggly-anim {
+  0% {
+    filter: url("#squiggly-0");
+  }
+  25% {
+    filter: url("#squiggly-1");
+  }
+  50% {
+    filter: url("#squiggly-2");
+  }
+  75% {
+    filter: url("#squiggly-3");
+  }
+  100% {
+    filter: url("#squiggly-4");
+  }
+}
+
+

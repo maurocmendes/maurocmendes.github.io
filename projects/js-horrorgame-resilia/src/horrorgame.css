@@ -26,7 +26,7 @@ body {
     font-size: 2.2rem;    
   }
   
-  /* Flickering animation */
+
   @keyframes flicker {
       
     0%, 18%, 22%, 25%, 53%, 57%, 100% {

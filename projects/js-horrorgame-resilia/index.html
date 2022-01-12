@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/reset.css">
-    <link rel="stylesheet" href="src/horrorgame.css">
-    <link rel="shortcut icon" type="image/ico" href="src/favicon.ico"/>  
-    <script src="src/title.js"></script>
-    <title></title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
-       
+    <title>Escolha o seu Caminho</title>
+    <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/index-main.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
-  <body>
-        <div class="bg-image">       
-            <div class="gridbox">
-                    <div class="conteinerbox">
-                        <header>
-                                <div class="menu">
-                                    <h1 class="neonText">Escolha seu Personagem</h1>
-                                   
-                                    <audio autoplay loop>
-                                    <source src="./src/sound/bgmusic.mp3" type="audio/mpeg">
-                                    </audio>
-                                </div>     
-                        </header>
-                        <section class="conteudo">
-                            <div class="column1" id="column01">
-                                    <h2>Julia🧛‍♀️</h2>
-                                    <p>Caçadora de Vampiros viciada em pizza de alho</p>
-                                    <img src="./src/images/Julia200-300.png">
-                            </div>
-                            <div class="column2" id="column02">
-                                    <h2>Carlos☕</h2>
-                                    <p>Programador Junin viciado em café da Tanzânia</p>
-                                    <img src="./src/images/Carlos200-300.png">
-                            </div>
-                            <div class="column3" id="column03">
-                                    <h2>Eleonor🕵️‍♀️</h2>
-                                    <p>Empresária e Investigadora de casos extraconjugais</p>
-                                    <img src="./src/images/Eleonor200-300.png">
-                            </div>      
-                        </section>
-                                    
-                        <footer>
-                                <p class="copyright">Copyright © 2021 Mauro Mendes - Todos os direitos reservados</p>
-                        </footer>
-                    </div>
+<body onClick="parent.location='charsel.html'"
+value='click here'>
+<div class="bg-image">
+    <div class="test" contenteditable>
+        O Jogo mais esperado do ano CHEGOU !
+        <p>&nbsp;</p>
+        <p class="small"><span class="escolha">Uma escolha</span>, <span class="sentenca">Uma Sentença</span> <p/>
+         
+        <p class="small">Clique na tela para selecionar seu personagem</p>
+        <p>&nbsp;</p>
+             
+            <p class="smaller">Sounds ON🔊</p>
+        
+      </div>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+      
+          
+          <filter id="squiggly-0">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+          <filter id="squiggly-1">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
+          
+          <filter id="squiggly-2">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+          <filter id="squiggly-3">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+          </filter>
+          
+          <filter id="squiggly-4">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+          </filter>
+        </defs> 
+      </svg>
     </div>
-   </body>
- </html>
-            
-            
+</body>
+</html>
