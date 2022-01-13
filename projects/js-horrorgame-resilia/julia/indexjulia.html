@@ -64,6 +64,7 @@
         </div>
       </div>
     </section>
+
     
     <footer class="u-black u-clearfix u-footer" id="sec-b677"><div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
@@ -88,7 +89,32 @@
       </div>
       <p class="u-text u-text-default u-text-1"> Copyright © 2021 Mauro Mendes - Todos os direitos reservados</p>
     </div></footer>
+    <script>
+      var pergunta = "Escolha a opção 1, 2 ou 3";
+     function resposta(){
+    var resposta = Number(prompt(pergunta));
     
-   
+    while (!resposta){
+        var resposta = Number(prompt(pergunta));
+    } 
+
+    if (resposta === 1){
+      alert("Você passou para a próxima fase");
+      window.location.replace("projects/js-horrorgame-resilia/julia/indexjulia_1a.html"); 
+               }
+    else if (resposta === 2) {
+      alert("Você passou para a próxima fase");
+      window.location.replace("projects/js-horrorgame-resilia/julia/indexjulia_1b.html"); 
+    }
+    else if (resposta === 3) {
+      alert("Você passou para a próxima fase");
+          location.href = "projects/js-horrorgame-resilia/julia/indexjulia_1c.html" 
+    }
+
+    }
+    
+
+    </script>
   </body>
 </html>
+  
