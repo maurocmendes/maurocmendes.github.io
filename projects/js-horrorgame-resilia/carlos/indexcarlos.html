@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="indexcarlos.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../prompt.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     
@@ -30,8 +31,8 @@
   <body class="u-body u-stick-footer"><header class="u-align-center-xs u-black u-header" id="sec-3f2a" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-text u-text-1">Carlos<br>
         </p>
-        <a href="indexcarlos.html" data-page-id="132359524" class="u-border-none u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-1">🔙 Voltar</a>
-        <a href="https://nicepage.com/k/business-card-html-templates" class="u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-2">Página Inicial<br>
+        <a href="../charsel.html" data-page-id="132359524" class="u-border-none u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-1">🔙 Voltar</a>
+        <a href="../index.html" class="u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-2">Página Inicial<br>
         </a>
       </div></header>
     <section class="u-align-right u-clearfix u-image u-section-1" id="carousel_9e27" data-image-width="1920" data-image-height="1080">
@@ -57,7 +58,7 @@
                     <li style="">Ir para uma festa rave</li>
                     <li>&nbsp;Sextar em casa comendo Yakissoba</li>
                   </ol>
-                  <a href=""  class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-hover-palette-2-base u-radius-50 u-btn-1" onClick="resposta()">clique para escolher uma opção</a>
+                  <a href=""  class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-hover-palette-2-base u-radius-50 u-btn-1" onclick="resposta();">Clique para escolher uma opção</a>
                 </div>
               </div>
             </div>
@@ -90,31 +91,5 @@
       </div>
       <p class="u-text u-text-default u-text-1"> Copyright © 2021 Mauro Mendes - Todos os direitos reservados</p>
     </div></footer>
-    <script>
-      var pergunta = "Escolha a opção 1, 2 ou 3";
-     function resposta(){
-    var resposta = Number(prompt(pergunta));
-    
-    while (!resposta){
-        var resposta = Number(prompt(pergunta));
-    } 
-
-    if (resposta === 1){
-      alert("Você passou para a próxima fase");
-      window.location.replace("projects/js-horrorgame-resilia/carlos/indexcarlos_1a.html"); 
-               }
-    else if (resposta === 2) {
-      alert("Você passou para a próxima fase");
-      window.location.replace("projects/js-horrorgame-resilia/carlos/indexcarlos_1b.html"); 
-    }
-    else if (resposta === 3) {
-      alert("Você passou para a próxima fase");
-          location.href = "projects/js-horrorgame-resilia/carlos/indexcarlos_1c.html" 
-    }
-
-    }
-    
-
-    </script>
-  </body>
+     </body>
 </html>
