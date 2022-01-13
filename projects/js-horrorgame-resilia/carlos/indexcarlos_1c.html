@@ -6,7 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>indexcarlos_1c</title>
+    <title>Carlos_1c</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="indexcarlos_1c.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -29,8 +29,8 @@
   </head>
   <body class="u-body u-stick-footer"><header class="u-align-center-xs u-black u-header" id="sec-3f2a" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xl u-text u-text-1">Carlos</p>
-        <a href="indexcarlos.html" data-page-id="132359524" class="u-border-none u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-1">🔙 Voltar</a>
-        <a href="https://nicepage.com/k/business-card-html-templates" class="u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-2">Página Inicial<br>
+        < <a href="../carlos/indexcarlos.html" data-page-id="132359524" class="u-border-none u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-1">🔙 Voltar</a>
+        <a href="../index.html" class="u-btn u-button-style u-hover-palette-2-base u-none u-text-hover-white u-text-palette-2-base u-btn-2">Página Inicial<br>
         </a>
       </div></header>
     <section class="u-align-right u-clearfix u-image u-section-1" id="carousel_9e27" data-image-width="1920" data-image-height="1080">
@@ -56,7 +56,7 @@
                     <li>Comer e depois mexer no tabuleiro OUIJA</li>
                     <li>Comer e jogar algum novo jogo ONLINE</li>
                   </ol>
-                  <a href="https://nicepage.one" class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-hover-palette-2-base u-radius-50 u-btn-1">clique para escolher uma opÇÃo</a>
+                  <a href="" class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-hover-palette-2-base u-radius-50 u-btn-1"onclick="resposta();">clique para escolher uma opção</a>
                 </div>
               </div>
             </div>
@@ -64,7 +64,6 @@
         </div>
       </div>
     </section>
-    
     <footer class="u-black u-clearfix u-footer" id="sec-b677"><div class="u-clearfix u-sheet u-sheet-1">
       <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
         <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/mauromend3s/"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d88c"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-d88c"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
@@ -90,29 +89,39 @@
     </div></footer>
     <script>
       var pergunta = "Escolha a opção 1, 2 ou 3";
-     function resposta(){
-    var resposta = Number(prompt(pergunta));
-    
-    while (!resposta){
-        var resposta = Number(prompt(pergunta));
-    } 
-
-    if (resposta === 1){
-      alert("Você passou para a próxima fase");
-      window.location.replace("projects/js-horrorgame-resilia/carlos/indexcarlos_1a.html"); 
-               }
-    else if (resposta === 2) {
-      alert("Você passou para a próxima fase");
-      window.location.replace("projects/js-horrorgame-resilia/carlos/indexcarlos_1b.html"); 
-    }
-    else if (resposta === 3) {
-      alert("Você passou para a próxima fase");
-          location.href = "projects/js-horrorgame-resilia/carlos/indexcarlos_1c.html" 
-    }
-
-    }
-    
-
-    </script>
-  </body>
-</html>
+   
+         
+   function testar(){
+       location.replace("../index.html");
+   }
+   
+         function restart() {
+     location.replace("../index.html");
+   }
+   
+      
+   var pergunta = "Escolha a opção 1, 2 ou 3";
+   function resposta(){
+   var resposta = Number(prompt(pergunta));
+   
+   while (!resposta){
+      var resposta = Number(prompt(pergunta));
+   } 
+   
+   if (resposta === 1){
+       window.history.pushState("", "", "../carlos/indexcarlos_1ca.html"); window.location.reload();
+             }
+   else if (resposta === 2) {
+   
+     window.history.pushState("", "", "../carlos/indexcarlos_1cb.html"); window.location.reload();
+   }
+   else if (resposta === 3) {
+   
+     window.history.pushState("", "", "../carlos/indexcarlos_1cc.html"); window.location.reload();
+   }
+   
+   }
+   
+       </script>
+     </body>
+   </html>
