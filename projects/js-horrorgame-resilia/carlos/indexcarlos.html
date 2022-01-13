@@ -57,7 +57,7 @@
                     <li style="">Ir para uma festa rave</li>
                     <li>&nbsp;Sextar em casa comendo Yakissoba</li>
                   </ol>
-                  <a href="https://nicepage.one" class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-hover-palette-2-base u-radius-50 u-btn-1">clique para escolher uma opÇÃo</a>
+                  <a href=""  class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-hover-palette-2-base u-radius-50 u-btn-1" onClick="resposta()">clique para escolher uma opção</a>
                 </div>
               </div>
             </div>
@@ -90,5 +90,28 @@
       </div>
       <p class="u-text u-text-default u-text-1"> Copyright © 2021 Mauro Mendes - Todos os direitos reservados</p>
     </div></footer>
+    <script>
+      var pergunta = "Escolha a opção 1, 2 ou 3";
+     function resposta(){
+    var resposta = Number(prompt(pergunta));
+    
+    while (!resposta){
+        var resposta = Number(prompt(pergunta));
+    } 
+
+    if (resposta === 1){
+               location.href = "indexcarlos_1a.html"
+    }
+    else if (resposta === 2) {
+               location.href = "indexcarlos_1b.html" 
+    }
+    else if (resposta === 3) {
+          location.href = ".indexcarlos_1c.html" 
+    }
+
+    }
+    
+
+    </script>
   </body>
 </html>
