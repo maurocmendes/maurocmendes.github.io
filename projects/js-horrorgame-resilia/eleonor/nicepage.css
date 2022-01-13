@@ -35539,7 +35539,7 @@ a.u-link.u-text-hover-grey-90:hover {
   font-weight: 700;
   font-size: 0.9375rem;
   align-self: center;
-  margin: -42px 373px 0 auto;
+  margin: -40px 374px 0 auto;
   padding: 4px 22px 4px 20px;
 }
 
@@ -35549,7 +35549,7 @@ a.u-link.u-text-hover-grey-90:hover {
   font-size: 0.9375rem;
   align-self: center;
   text-decoration: none solid rgb(219, 84, 90);
-  margin: -35px auto 20px 373px;
+  margin: -32px auto 8px 376px;
   padding: 3px 8px 5px 6px;
 }
 @media (max-width: 1199px) {
@@ -35563,12 +35563,10 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-btn-1 {
-    margin-top: -40px;
     margin-right: 230px;
   }
 
   .u-header .u-btn-2 {
-    margin-top: -32px;
     margin-bottom: 33px;
     margin-left: 231px;
   }
