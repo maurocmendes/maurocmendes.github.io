@@ -1,9 +1,14 @@
 var pergunta = "Escolha a opção 1, 2 ou 3";
 
       
-      function restart() {
-  location.replace("../index.html")
+function testar(){
+    location.replace("../index.html");
 }
+
+      function restart() {
+  location.replace("../index.html");
+}
+
    
 var pergunta = "Escolha a opção 1, 2 ou 3";
 function resposta(){
@@ -14,16 +19,15 @@ while (!resposta){
 } 
 
 if (resposta === 1){
- alert("Você passou para a próxima fase");
- window.location.replace("indexcarlos_1a.html"); 
+    window.history.pushState("", "", "../carlos/indexcarlos_1a.html"); window.location.reload();
           }
 else if (resposta === 2) {
- alert("Você passou para a próxima fase");
- window.location.replace("/indexcarlos_1b.html"); 
+
+    location.replace("../index.html");
 }
 else if (resposta === 3) {
- alert("Você passou para a próxima fase");
-     location.href = "./indexcarlos_1c.html" 
+
+    location.replace("../index.html");
 }
 
 }
