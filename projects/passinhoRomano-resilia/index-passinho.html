@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Narrow Jumbotron Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="passinho.css" rel="stylesheet">
+        <!-- JS defer -->
+        <script defer src="passinho.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header clearfix">
+                <h3 class="text-center text-muted"><b>Coder/Decoder [CAESAR CYPHER /BASE 64 ]</b></h3>
+            </div>
+            <div class="jumbotron">
+                <label class="text-body">
+                    <h5 class="text-black-50">MENSAGEM</h5>
+                </label>
+                <div class="container">
+                    <textarea id="mensagem" class="form-control textos" rows="3"></textarea>
+                </div>
+                <label class="mt-3">
+                    <h5 class="text-black-50">ESCOLHA O MÉTODO</h5>
+                </label>
+                <div class="container">
+</div>
+                <div class="container">
+                    <div class="form-check"> 
+                        <input class="form-check-input" type="radio" name="codigo" id="base64" value="BASE64"> 
+                        <label class="form-check-label" for="Base64">BASE64</label>                         
+                    </div>
+                    <div class="form-check"> 
+                        <input class="form-check-input" type="radio" name="codigo" id="cesar" value="CAESAR CYPHER"> 
+                        <label class="form-check-label" for="César">CAESAR CYPHER</label>                         
+                    </div>
+                </div>
+                <div class="container incremento">
+                    <div id="incremento" class="container incremento visible">
+                        <div class="container mt-3">
+                            <label class="mt-3">CHAVE/INCREMENTO [CAESAR CYPHER]</label>
+                        </div>
+                        <div class="container">
+                            <input type="number" id="increment" value="1" for="incremento" class="form-control text-center" placeholder="DEFINA A CHAVE ">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container mb-0 mt-1">
+                        <label class="mt-3 text-body">
+                            <h5 class="text-black-50">SELECIONE A OPERAÇÃO</h5>
+                        </label>
+                    </div>
+                    <div class="container">
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="frm" id="code" value="CODIFICAR"> 
+                            <label class="form-check-label" for="codificar">CODIFICAR</label>                             
+                        </div>
+                        <div class="form-check"> 
+                            <input class="form-check-input" type="radio" name="frm" id="decode" value="DECODIFICAR"> 
+                            <label class="form-check-label" for="decodificar">DECODIFICAR</label>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-3" style="margin-top: 10px; margin-bottom: 1px;">
+                    <button id="botaoEnviar" type="button" class="btn btn-secondary">Executar</button>
+                </div>
+                <div class="container mt-3">
+                    <h5> RESULTADO</h5>
+                    <p class="font-weight-bold text-center text-danger"></p>
+                </div>
+            </div>
+            <div class="row marketing">
+</div>
+            <footer class="footer">
+                <h5 class="text-center"><b>&copy; Mauro Mendes 2022</b></h5>
+            </footer>
+        </div>         
+        <!-- /container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
